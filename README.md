@@ -13,6 +13,11 @@ This is a simple news app built using Kotlin and the newsapi.org API.
 
 Refer to [this document](https://docs.google.com/document/d/1yxqScAjwbnnPrw3vTyCUb90_nZXwglogbw71mwhpOsI/edit?usp=sharing) for a list of positive and negative test cases.
 
+## 3rd Party Library Used For News App
+-   Retrofit (com.squareup.retrofit2:retrofit:2.9.0)
+-   Retrofit Gson Converter (com.squareup.retrofit2:converter-gson:2.9.0)
+-   Glide (com.github.bumptech.glide:glide:4.15.1)
+
 ## Getting Started
 
 1.  Clone the repository to your local machine
