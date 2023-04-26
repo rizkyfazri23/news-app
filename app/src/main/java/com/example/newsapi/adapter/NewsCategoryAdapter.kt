@@ -1,10 +1,10 @@
-package com.example.newsapi.view
+package com.example.newsapi.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapi.R
-import com.example.newsapi.databinding.CategoryItemBinding
+import com.example.newsapi.databinding.NewsCategoryItemBinding
 import com.example.newsapi.model.Category
 
 class NewsCategoryAdapter(val categories: List<Category>, val onCategoryClick: (Category) -> Unit) :
@@ -12,7 +12,7 @@ class NewsCategoryAdapter(val categories: List<Category>, val onCategoryClick: (
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding =
-            CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            NewsCategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -60,5 +60,5 @@ class NewsCategoryAdapter(val categories: List<Category>, val onCategoryClick: (
 
     override fun getItemCount() = categories.size
 
-    class ViewHolder(val binding: CategoryItemBinding) : RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: NewsCategoryItemBinding) : RecyclerView.ViewHolder(binding.root)
 }

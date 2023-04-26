@@ -1,4 +1,4 @@
-package com.example.newsapi.view
+package com.example.newsapi.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsapi.R
 import com.example.newsapi.model.Article
+import com.example.newsapi.view.NewsArticleDetailsActivity
 
 class NewsArticlesAdapter(private val articles: List<Article>) :
     RecyclerView.Adapter<NewsArticlesAdapter.ViewHolder>() {

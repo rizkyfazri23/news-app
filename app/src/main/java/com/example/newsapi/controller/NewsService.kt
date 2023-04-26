@@ -23,7 +23,6 @@ interface NewsService {
         @Query("sources") sources: String
     ): Call<ArticlesResponse>
 
-
     @GET("/v2/everything")
     fun getArticlesBySource(
         @Query("apiKey") apiKey: String = "",

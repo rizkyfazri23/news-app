@@ -6,8 +6,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapi.R
+import com.example.newsapi.adapter.NewsSourcesAdapter
 import com.example.newsapi.controller.SourcesResponse
 import com.example.newsapi.model.NewsServiceFactory
+import com.example.newsapi.util.Constants
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,13 +25,12 @@ class NewsSourcesActivity : AppCompatActivity() {
         newsSourcesRecyclerView = findViewById(R.id.news_sources_recycler_view)
         newsSourcesRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        val apiKey = "69098ca7575f42069325e5168a565e07"
         val categoryName = intent.getStringExtra("categoryName") ?: ""
         title = categoryName
 
         val newsService = NewsServiceFactory.create()
 
-        newsService.getSourcesByCategory(apiKey, categoryName).enqueue(object : Callback<SourcesResponse> {
+        newsService.getSourcesByCategory(Constants.API_KEY, categoryName).enqueue(object : Callback<SourcesResponse> {
             override fun onResponse(call: Call<SourcesResponse>, response: Response<SourcesResponse>) {
                 if (response.isSuccessful) {
                     val sources = response.body()?.sources ?: emptyList()

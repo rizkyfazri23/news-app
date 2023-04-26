@@ -1,4 +1,4 @@
-package com.example.newsapi.view
+package com.example.newsapi.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsapi.R
 import com.example.newsapi.model.Source
+import com.example.newsapi.view.NewsArticleActivity
 
 class NewsSourcesAdapter(private val sources: List<Source>) :
     RecyclerView.Adapter<NewsSourcesAdapter.ViewHolder>() {
