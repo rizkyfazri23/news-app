@@ -1,7 +1,7 @@
 # News App!
 
-This is a simple news app built using Kotlin and the newsapi.org API.
-You can download the News App [here](https://drive.google.com/file/d/1ORqAEY2Pb6P0HSu1o6t4nsnK0pLkwsWU/view?usp=sharing)
+This is a simple news app built using Kotlin and the newsapi.org API. <br>
+You can download the News App [download the apk here](https://drive.google.com/file/d/1ORqAEY2Pb6P0HSu1o6t4nsnK0pLkwsWU/view?usp=sharing)
 
 ## Features
 
